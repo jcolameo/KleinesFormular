@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Einfaches Formular</title>
+</head>
+
+<body>
+    <h1>BITTE FÜLLEN SIE DAS FORMULAR KOMPLETT AUS!</h1>
+    <h2>Persönliche Daten</h2>
+
+    <form action="uebung_auswertung.php" method="POST">
+        <p>Vorname: <input type="text" name="vorname"></p>
+        <p>Nachname: <input type="text" name="nachname"></p>
+        <p>Wohnort: <input type="text" name="ort"></p>
+
+        <h2>Was wir wissen wollen</h2>
+        <p>wie wohnen sie?
+            <input type="radio" name="wohnen" value="einfamilienhaus"> einfamilienhaus
+            <input type="radio" name="wohnen" value="eigentumswohnung"> eigentumswohnung
+            <input type="radio" name="wohnen" value="mehrfamilinhaus"> mehrfamilinhaus
+        </p>
+        <p>welche TV Sendung sehen sie gern?
+            <input type="checkbox" name="Sendung" value="doku"> Dokumentation
+            <input type="checkbox" name="Sendung" value="news"> Nachrichten
+            <input type="checkbox" name="Sendung" value="movies"> Spielfilme
+            <input type="checkbox" name="Sendung" value="sport"> Sportsendungen
+        </p>
+        <p>Haben sie noch eine Nachricht an uns?
+            <textarea name="memo"></textarea>
+        </p>
+        <p><input type="submit" value="Abschicken">
+            <input type="reset" value="Zurücksetzen">
+        </p>
+    </form>
+</body>
+
+</html>
